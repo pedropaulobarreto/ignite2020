@@ -12,10 +12,12 @@ const upload = multer({
 });
 
 categoriesRoutes.post("/", (request, response) => {
+  console.log("Reload 2");
   return createCategoryController.handle(request, response);
 });
 
 categoriesRoutes.get("/", (request, response) => {
+  console.log("drucco");
   return listCategoriesController.handle(request, response);
 });
 
