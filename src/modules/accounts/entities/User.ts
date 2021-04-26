@@ -13,9 +13,6 @@ export default class User {
   @Column()
   name: string;
 
-  @Column({ unique: true, nullable: true })
-  username: string;
-
   @Column()
   password: string;
 
